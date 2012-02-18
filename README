@@ -1,3 +1,3 @@
-These are static HTML (sometimes with a bit of PHP) mockups for Intranet 3.  They are now designed to pull CSS and images from the main Intranet 3 project.  Create a symlink named "public" to the Intranet 3 "public" folder in your cloned copy of the I3 repo.
+These are mockups of the Intranet 3 user interface.  They are now designed to pull CSS and images from the main Intranet 3 project.  Create a symlink named "public" to the Intranet 3 "public" folder in your cloned copy of the I3 repo.
 
 		ln -s /path/to/i3/repo/public public
