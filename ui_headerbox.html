@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>triodine UI test</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="layout.css"/>
+		<link rel="stylesheet" type="text/css" href="news.css"/>
+		<link rel="stylesheet" type="text/css" href="fire.css"/>
+		<link rel="stylesheet" type="text/css" href="light/ui.css"/>
+		<link rel="stylesheet" type="text/css" href="light/news.css"/>
+		
+		<script type="text/javascript">
+			var themeLink = null;
+			/**
+			 * Temporary function for switching the theme
+			 * @param {string} theme - The theme to switch to
+			 */
+			function switchTheme(theme) {
+				//alert(theme); // for debugging
+				try {
+					document.head.removeChild(document.getElementsByTagName("link")[document.getElementsByTagName("link").length - 1]);
+					document.head.removeChild(document.getElementsByTagName("link")[document.getElementsByTagName("link").length - 1]);
+				} catch(e) {}
+				themeLink = document.createElement("link");
+				themeLink.rel = "stylesheet";
+				themeLink.type = "text/css";
+				themeLink.href = theme + "/ui.css";
+				document.head.appendChild(themeLink);
+				
+				themeLink = document.createElement("link");
+				themeLink.rel = "stylesheet";
+				themeLink.type = "text/css";
+				themeLink.href = theme + "/news.css";
+				document.head.appendChild(themeLink);
+				
+				localStorage.theme = theme;
+			}
+			
+			window.addEventListener("load", function() {
+				if (!!window.localStorage && localStorage.theme != null) {
+					switchTheme(localStorage.theme);
+					document.getElementById("lightTheme").checked = false;
+					document.getElementById("darkTheme").checked = false;
+					document.getElementById(localStorage.theme + "Theme").checked = true;
+				} else {
+					switchTheme("light");
+				}
+			}, false);
+			function fire() {
+				document.body.classList.add("fire");
+			}
+			var creffett = fire;
+		</script>
+		
+		<!-- this lets HTML5 tags have styling in IE6 -->
+		<!--[if lt IE 9]>
+			<script>
+				document.createElement("header");
+				document.createElement("nav");
+				document.createElement("section");
+				document.createElement("article");
+				document.createElement("aside");
+				document.createElement("footer");
+			</script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="fire.css"/>
+		<style type="text/css">
+			.testHeaderBox {
+				position:absolute;
+				top:0px;
+				left:0px;
+				right:0px;
+				height:72px;
+				/* background-image:-webkit-linear-gradient(#BABAC0, #F3F3FA); */
+				background-image:-webkit-linear-gradient(#FFFFFF, #EFEFF7);
+				background-image:-moz-linear-gradient(#FFFFFF, #EFEFF7);
+				
+			}
+			body {
+				background-image:none !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="testHeaderBox"></div>
+		<div id="logo">TJ Intranet 3</div>
+		<div id="sections">
+			<a href="#/news" class="section">News</a>
+			<a href="#/polls" class="section">Polls</a>
+			<a href="#/eighth" class="section">Eighth</a>
+			<a href="#/clubs" class="section">Clubs</a>
+			<a href="#/calendar" class="section">Calendar</a>
+			<a href="#/logout" style="float:right;">Log out</a>
+			<a href="#/prefs" style="float:right;">Preferences</a>
+		</div>
+		<div id="header">
+			Welcome, User 7.  The next eighth period is Monday, November 28<sup>th</sup>, 2011, and you are currently signed up for ASDF club.
+		</div>
+		<div id="intraboxes">
+			<div class="intrabox">
+				<div class="intraboxHeader">Clock<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;−&nbsp;&times;</div></div>
+				<div class="intraboxContent">
+					<div id="clock" style="font-size:48px;text-align:center;margin:-0.2em;">11:11:11</div>
+					<script type="text/javascript">
+						window.addEventListener("load", function() {
+							setInterval(function() {
+								var date = new Date();
+								document.getElementById("clock").innerHTML = (date.getHours() < 10 ? "0" : "") + date.getHours() + ":" + (date.getMinutes() < 10 ? "0" : "") + date.getMinutes() + ":" + (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
+							}, 200);
+						}, false);
+					</script>
+				</div>
+			</div>
+			<div class="intrabox">
+				<div class="intraboxHeader">Useful Links<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;−&nbsp;&times;</div></div>
+				<div class="intraboxContent">
+					<a href="http://fcps.blackboard.com" target="_blank">FCPS Blackboard</a>
+					<br/>
+					<a href="https://iodine.tjhsst.edu/info/resources" target="_blank">Proxy and Library Databases</a>
+					<br/>
+					<a href="http://academics.tjhsst.edu/careercenter" target="_blank">College & Career Center</a>
+					<br/>
+					<a href="http://leadership.tjhsst.edu/sga" target="_blank">TJ SGA</a>
+					<br/>
+					<a href="http://postman.tjhsst.edu" target="_blank">Postman (calendar)</a>
+					<br/>
+					<a href="http://colonialathletics.org/" target="_blank">TJ Athletics</a>
+				</div>
+			</div>
+			<div class="intrabox">
+				<div class="intraboxHeader">Miscellaneous Form Elements<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;−&nbsp;&times;</div></div>
+				<div class="intraboxContent">
+					<button>Button!</button>
+					<br/>
+					<label for="radio11"><input type="radio" name="radio1" id="radio11" checked="checked"/> This</label>
+					<label for="radio12"><input type="radio" name="radio1" id="radio12"/> That</label>
+					<br/>
+					<label for="checkbox1"><input type="checkbox" id="checkbox1"/> Checkbox!</label>
+				</div>
+			</div>
+			<div class="intrabox">
+				<div class="intraboxHeader">Temporary Theme Switcher<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;−&nbsp;&times;</div></div>
+				<div class="intraboxContent">
+					<label for="lightTheme"><input type="radio" name="theme" id="lightTheme" checked="checked" onclick="switchTheme('light');"/> Light</label>
+					<label for="darkTheme"><input type="radio" name="theme" id="darkTheme" onclick="switchTheme('dark');"/> Dark</label>
+				</div>
+			</div>
+		</div>
+		<div class="pane" id="mainPane">
+			<div class="paneHeader">News</div>
+			<div class="paneContent">
+				<div class="newsPost">
+					<header>Free food!</header>
+					<article>
+						<p>Bacon ipsum dolor sit amet non cupidatat laboris chicken. Flank quis magna spare ribs. Ball tip pastrami magna pork belly. Spare ribs tempor shank beef, pig pork chop filet mignon. Chuck aliquip elit aliqua reprehenderit salami culpa, ut eiusmod filet mignon dolore. Short loin leberkäse tempor excepteur venison esse. Laboris sint hamburger short loin tail.</p>
+						<p>Brisket in in id, dolore spare ribs reprehenderit filet mignon pork belly qui shank cillum ad enim. Id short loin do nulla sunt ea, boudin beef ribs. Qui ham sausage reprehenderit, biltong consectetur ullamco in aliqua tongue andouille beef jowl t-bone. Incididunt hamburger dolore rump laborum veniam. Adipisicing bacon leberkäse laborum quis. Laborum id pancetta, duis pig occaecat frankfurter rump fatback. Sed cupidatat ea minim rump occaecat, in shoulder nisi jerky meatloaf sirloin adipisicing.</p>
+					</article>
+					<footer>
+						<a href="#" id="likeButton">Like</a>
+						0 people liked this
+						|
+						<a href="#">Keep unread</a>
+						|
+						<a href="#">Collapse</a>
+				</div>
+				<div class="newsPost">
+					<header>Look at my news posting, my news posting is amazing</header>
+					<aside>Posted on 2011-12-16 by ASDF club</aside>
+					<article>
+						<p>Fatback aliqua et, aute jowl irure laboris. Hamburger quis filet mignon ham, sed turducken mollit ham hock in prosciutto exercitation voluptate tail. Eu laborum ullamco, ad duis do pork loin cupidatat sausage laboris. Biltong short loin prosciutto incididunt, kielbasa pancetta fugiat capicola reprehenderit fatback proident anim cupidatat. Culpa frankfurter pariatur jerky pastrami consectetur est non occaecat. Laborum cupidatat t-bone, nulla duis strip steak jerky beef ribs sausage shank dolor culpa enim. Sirloin exercitation dolore drumstick aliquip.</p>
+						<p>Venison aute dolor salami, shoulder in eu incididunt meatball pork chop pork drumstick dolore corned beef. Sed occaecat ribeye, ullamco pancetta elit short loin salami sint est. Reprehenderit filet mignon anim cillum andouille tri-tip prosciutto. Ut bresaola shank cow, fugiat aliqua swine in turkey excepteur drumstick andouille aliquip. Pork chop pig non, bacon duis et nisi ullamco cow id proident est. Filet mignon aute commodo corned beef bacon flank short ribs. Ut spare ribs voluptate biltong culpa, ullamco excepteur incididunt salami do ground round turkey.</p>
+					</article>
+				</div>
+				<div class="newsPost">
+					<header>This news posting is not amazing, and does not taste like rasins</header>
+					<article>
+						<p>Tenderloin filet mignon short ribs, ullamco est quis laborum nisi. Tail capicola excepteur magna, swine meatloaf reprehenderit turducken dolore et laborum duis dolor venison. Fugiat dolor pancetta, tri-tip turkey rump hamburger proident ut tongue capicola. Aute ut quis consectetur. Chuck aute venison, dolore magna tempor bresaola. Sint t-bone corned beef elit, swine sed sirloin tail ullamco velit beef ribs prosciutto laborum fugiat et. In rump short ribs, pig pariatur sunt salami strip steak nulla occaecat bresaola sint.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
