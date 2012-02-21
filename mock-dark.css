@@ -1,3 +1,47 @@
 #logo {
 	background-image:url(public/images/themes/dark/logo.png);
 }
+
+input[type="radio"]:checked {
+	background-image:url(public/images/themes/dark/radiodot.png), -webkit-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),    -moz-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),     -ms-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),      -o-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),         linear-gradient(#303030, #202020);
+}
+input[type="checkbox"]:checked {
+	background-image:url(public/images/themes/dark/check.png), -webkit-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/check.png),    -moz-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/check.png),     -ms-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/check.png),      -o-linear-gradient(#303030, #202020);
+	background-image:url(public/images/themes/dark/check.png),         linear-gradient(#303030, #202020);
+}
+
+input[type="radio"]:checked:hover:not(:disabled), input[type="radio"]:checked:focus:not(:disabled) {
+	background-image:url(public/images/themes/dark/radiodot.png), -webkit-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/radiodot.png),    -moz-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/radiodot.png),     -ms-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/radiodot.png),      -o-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/radiodot.png),         linear-gradient(#353535, #282828);
+}
+input[type="checkbox"]:checked:hover:not(:disabled), input[type="checkbox"]:checked:focus:not(:disabled) {
+	background-image:url(public/images/themes/dark/check.png), -webkit-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/check.png),    -moz-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/check.png),     -ms-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/check.png),      -o-linear-gradient(#353535, #282828);
+	background-image:url(public/images/themes/dark/check.png),         linear-gradient(#353535, #282828);
+}
+input[type="radio"]:checked:active:not(:disabled) {
+	background-image:url(public/images/themes/dark/radiodot.png), -webkit-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),    -moz-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),     -ms-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),      -o-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/radiodot.png),         linear-gradient(#181818, #202020);
+}
+input[type="checkbox"]:checked:active:not(:disabled) {
+	background-image:url(public/images/themes/dark/check.png), -webkit-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/check.png),    -moz-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/check.png),     -ms-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/check.png),      -o-linear-gradient(#181818, #202020);
+	background-image:url(public/images/themes/dark/check.png),         linear-gradient(#181818, #202020);
+}
