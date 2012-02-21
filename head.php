@@ -73,9 +73,6 @@
 		window.addEventListener("load", function() {
 			if (!!window.localStorage && localStorage.theme != null) {
 				switchTheme(localStorage.theme);
-				document.getElementById("lightTheme").checked = false;
-				document.getElementById("darkTheme").checked = false;
-				document.getElementById(localStorage.theme + "Theme").checked = true;
 			} else {
 				switchTheme("light");
 			}
