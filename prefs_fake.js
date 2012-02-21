@@ -1,5 +1,15 @@
 var prefs = {
-	"general":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> General</div><div class="paneContent">Please note that the close buttons at the top-right corners of sub-panes are temporary and will eventually be replaced with something better.</div>',
+	"general":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> General</div>' +
+		'<div class="paneContent"><br />' +
+		'Theme:' +
+		'<select onchange="switchTheme(value);">' +
+		'<option value="dark"' +
+			(localStorage.theme === "dark" ? ' selected' : '') +
+		'>Dark</option>' +
+		'<option value="light"' +
+			(localStorage.theme === "light" ? ' selected' : '') +
+		'>Light</option>' +
+		'</div>',
 	"groups":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Groups</div>' +
 		'<div class="paneContent">' +
 		'<br />Clubs<br />' +

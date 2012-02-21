@@ -35,13 +35,6 @@
 		</div>
 	</div>
 	<div class="intrabox">
-		<div class="intraboxHeader">Temporary Theme Switcher<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;<span onclick="parentElement.parentElement.parentElement.classList.toggle('collapsed');">−</span>&nbsp;<span onclick="parentElement.parentElement.parentElement.parentElement.removeChild(parentElement.parentElement.parentElement);">&times;</span></div></div>
-		<div class="intraboxContent">
-			<label for="lightTheme"><input type="radio" name="theme" id="lightTheme" checked="checked" onclick="switchTheme('light');"/> Light</label>
-			<label for="darkTheme"><input type="radio" name="theme" id="darkTheme" onclick="switchTheme('dark');"/> Dark</label>
-		</div>
-	</div>
-	<div class="intrabox">
 		<div class="intraboxHeader">Scratchpad<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;<span onclick="parentElement.parentElement.parentElement.classList.toggle('collapsed');">−</span>&nbsp;<span onclick="parentElement.parentElement.parentElement.parentElement.removeChild(parentElement.parentElement.parentElement);">&times;</span></div></div>
 		<div class="intraboxContent">
 			<textarea style="width:95%;height:7.2em">Nothing you type here will actually be saved.</textarea>
