@@ -10,6 +10,34 @@ var prefs = {
 			(localStorage.theme === "light" ? ' selected' : '') +
 		'>Light</option>' +
 		'</div>',
+	"intraboxes":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Intraboxes</div>' +
+		'<div class="paneContent"><br />' +
+		'<section><header>Clock</header>' +
+			'<label for="clockFormat12">' +
+				'<input type="radio" name="clockFormat" id="clockFormat12" onclick="localStorage.clockFormat = \'12hour\';"' +
+					(localStorage.clockFormat != "24hour" ? ' checked' : '') +
+				' />' +
+				'12-hour' +
+			'</label> <label for="clockFormat24">' +
+				'<input type="radio" name="clockFormat" id="clockFormat24" onclick="localStorage.clockFormat = \'24hour\';"' +
+					(localStorage.clockFormat === "24hour" ? ' checked' : '') +
+				' />' +
+				'24-hour' +
+			'</label>' +
+		'</section><section><header>Weather</header>' +
+			'<label for="weatherUnitsMetric">' +
+				'<input type="radio" name="weatherUnits" id="weatherUnitsMetric" onclick="localStorage.weatherUnits = \'metric\'; loadWeather();"' +
+					(localStorage.weatherUnits != "us" ? ' checked' : '') +
+				' />' +
+				'Metric' +
+			'</label> <label for="weatherUnitsUS">' +
+				'<input type="radio" name="weatherUnits" id="weatherUnitsUS" onclick="localStorage.weatherUnits = \'us\'; loadWeather();"' +
+					(localStorage.weatherUnits === "us" ? ' checked' : '') +
+				' />' +
+				'US' +
+			'</label>' +
+		'</section>' +
+		'</div>',
 	"groups":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Groups</div>' +
 		'<div class="paneContent">' +
 		'<br />Clubs<br />' +
@@ -43,7 +71,6 @@ var prefs = {
 		'<input type="checkbox" disabled="disabled" checked="checked" title="You cannot opt out of this topic"> Emergency alerts<br />' +
 		'<input type="checkbox" title="Receive news with this tag"> School events<br />' +
 		'</div>',
-	"intraboxes":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Intraboxes</div><div class="paneContent">[content]</div>',
 	"news":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> News</div>' +
 		'<div class="paneContent">You will receive news for:<br />' +
 		'<br />Clubs<br />' +

@@ -6,11 +6,11 @@
 	<!-- Allows the app to run on iOS without Safari toolbars -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	
-		<!-- TODO: favicon line commented out because I have not created the favicon yet -->
-		<!-- <link rel="shortcut-icon" rel="image/x-icon" href="public/images/icons/favicon.ico" /> -->
-		<link rel="apple-touch-icon-precomposed" href="public/images/icons/apple-touch-icon-57x57-precomposed.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/images/icons/apple-touch-icon-72x72-precomposed.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/images/icons/apple-touch-icon-114x114-precomposed.png" />
+	<!-- TODO: favicon line commented out because I have not created the favicon yet -->
+	<!-- <link rel="shortcut-icon" rel="image/x-icon" href="public/images/icons/favicon.ico" /> -->
+	<link rel="apple-touch-icon-precomposed" href="public/images/icons/apple-touch-icon-57x57-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/images/icons/apple-touch-icon-72x72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/images/icons/apple-touch-icon-114x114-precomposed.png" />
 	
 	<link rel="stylesheet" type="text/css" href="fire.css" />
 	<link rel="stylesheet" type="text/css" href="public/css/default/ui.css" />
@@ -34,6 +34,7 @@
 	<link rel="stylesheet" type="text/css" href="mock-light.css" />
 	
 	<script type="text/javascript" src="panes.js"></script>
+	<script type="text/javascript" src="weather.js"></script>
 	<script type="text/javascript" src="polls_fake.js"></script>
 	<script type="text/javascript" src="prefs_fake.js"></script>
 	<script type="text/javascript">
