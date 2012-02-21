@@ -7,9 +7,14 @@ weatherXHR.onreadystatechange = function() {
 			//var weatherData = weatherXHR.responseXML;
 			var weatherData = (new DOMParser()).parseFromString(weatherXHR.responseText, "text/xml");
 			var currentData = weatherData.getElementsByTagName("current_conditions")[0];
+			
+			var icon = /.*\/(\w*)\.gif/.exec(currentData.getElementsByTagName("icon")[0].getAttribute("data"))[1];
+			var missingImgs = {"mostly_cloudy":"partly_cloudy"}]; // weather Google lacks fancy images for and substitutes
+			icon = icon in missingImgs ? missingImgs[icon] : icon;
+			
 			var output = "";
 			output += "<img src=\"https://ssl.gstatic.com/onebox/weather/60/";
-			output += /.*\/(\w*)\.gif/.exec(currentData.getElementsByTagName("icon")[0].getAttribute("data"))[1];
+			output += icon;
 			output += ".png\" alt=\"\" style=\"float:left;margin-right:8px;margin-top:4px;\" />";
 			
 			output += "<span style=\"font-weight:bold;\">";
