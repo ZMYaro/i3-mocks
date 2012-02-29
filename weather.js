@@ -11,7 +11,7 @@ function loadWeather() {
 				var currentData = weatherData.getElementsByTagName("current_conditions")[0];
 				
 				var icon = /.*\/(\w*)\.gif/.exec(currentData.getElementsByTagName("icon")[0].getAttribute("data"))[1];
-				var missingImgs = {"mostly_cloudy":"partly_cloudy"}; // weather Google lacks fancy images for and substitutes
+				var missingImgs = {"mostly_cloudy":"partly_cloudy", "mist":"light_rain"}; // weather Google lacks fancy images for and substitutes
 				icon = icon in missingImgs ? missingImgs[icon] : icon;
 				
 				var output = "";
