@@ -36,8 +36,6 @@
 	<script type="text/javascript" src="ejs/ejs_production.js"></script>
 	<script type="text/javascript" src="panes.js"></script>
 	<script type="text/javascript" src="weather.js"></script>
-	<script type="text/javascript" src="polls_fake.js"></script>
-	<script type="text/javascript" src="prefs_fake.js"></script>
 	<script type="text/javascript">
 		var themeLink = null;
 		/**
