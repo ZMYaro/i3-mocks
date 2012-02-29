@@ -1,0 +1,8 @@
+<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> General</div>
+<div class="paneContent"><br />
+	Theme:
+	<select onchange="switchTheme(value);">
+		<option value="dark"<% if (localStorage.theme === "dark") { %> selected<% } %>>Dark</option>
+		<option value="light"<% if (localStorage.theme === "light") { %> selected<% } %>>Light</option>
+	</select>
+</div>

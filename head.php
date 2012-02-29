@@ -33,6 +33,7 @@
 	<link rel="stylesheet" type="text/css" href="public/css/light/eighth.css" />
 	<link rel="stylesheet" type="text/css" href="mock-light.css" />
 	
+	<script type="text/javascript" src="ejs/ejs_production.js"></script>
 	<script type="text/javascript" src="panes.js"></script>
 	<script type="text/javascript" src="weather.js"></script>
 	<script type="text/javascript" src="polls_fake.js"></script>

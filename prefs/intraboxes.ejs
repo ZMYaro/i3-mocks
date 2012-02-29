@@ -1,0 +1,34 @@
+<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Intraboxes</div>
+<div class="paneContent"><br />
+	<section>
+		<header>Clock</header>
+		<label for="clockFormat12">
+			<input type="radio" name="clockFormat" id="clockFormat12" onclick="localStorage.clockFormat = '12hour';"
+				<% if (localStorage.clockFormat != "24hour") { %>checked<% } %>
+			/>
+			12-hour
+		</label>
+		<label for="clockFormat24">
+			<input type="radio" name="clockFormat" id="clockFormat24" onclick="localStorage.clockFormat = '24hour';"
+				<% if (localStorage.clockFormat === "24hour") { %>checked<% } %>
+			/>
+			24-hour
+		</label>
+	</section>
+	<section>
+		<header>Weather</header>
+		<label for="weatherUnitsMetric">
+			<input type="radio" name="weatherUnits" id="weatherUnitsMetric" onclick="localStorage.weatherUnits = 'metric'; loadWeather();"
+				<% if (localStorage.weatherUnits != "us") { %>checked<% } %>
+			/>
+			Metric
+		</label>
+		<label for="weatherUnitsUS">
+			<input type="radio" name="weatherUnits" id="weatherUnitsUS" onclick="localStorage.weatherUnits = 'us'; loadWeather();"
+				<% if (localStorage.weatherUnits === "us") { %>checked<% } %>
+			/>
+			US
+		</label>
+	</section>
+</div>
+

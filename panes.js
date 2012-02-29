@@ -1,3 +1,5 @@
+/**  */
+
 /** The currently selected menu item (null if no sub-pane is open) */
 var selectedTab = null;
 
@@ -15,19 +17,22 @@ function clickedTab(item) {
 
 /**
  * Opens a second pane containing the given HTML
- * @param {string} html - The HTML to insert into the panel
+ * @param {string} template - The URL of the template to be displayed in the panel
  */
-function openSubPane(html) {
+function openSubPane(template) {
 	var subPane = document.getElementById("subPane")
 	if (subPane != null) {
 		document.body.removeChild(subPane);
 	}
 	subPane = document.createElement("div");
+	
+	//subPane.innerHTML = html;
+	subPane.innerHTML = new EJS({url:template}).render({});
+	
+	
 	subPane.className = "pane";
 	subPane.id = "subPane";
 	document.body.appendChild(subPane);
-	
-	subPane.innerHTML = html;
 	
 	// TODO: Replace this with adding a CSS class
 	document.getElementById("mainPane").style.position = "fixed";
