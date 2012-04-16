@@ -11,7 +11,7 @@
 	</div>
 	<div id="searchContainer">
 		<div>
-			<input type="search" results="0" placeholder="OMG Search Box!" name="q" />
+			<input type="search" results="0" placeholder="Search news, events, and the directory" name="q" />
 		</div>
 		<button type="submit">Search</button>
 	</div>
