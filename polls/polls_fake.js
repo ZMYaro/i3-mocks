@@ -1,5 +1,5 @@
 var polls = {
-	"randomForm":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Random Form</div>' +
+	"tjtoday":'<div class="paneHeader"><button onclick="closeSubPane();">&laquo;</button> Random Form</div>' +
 		'<div class="paneContent">' +
 		'Here is a simple text box:<br />' +
 		'<input type="text" />' +
