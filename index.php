@@ -24,31 +24,43 @@
 	<body style="background-image:url(public/images/backgrounds/gnome3.jpg);background-size:cover;background-attachment:fixed;">
 		<div id="subPane">
 			<h2>Today's schedule</h2>
-			<p>Modified blue day</p>
+			<p>tjSTAR</p>
 			<table>
 				<tr>
-					<td>Period 1</td>
-					<td>8:30-10:20</td>
+					<td>Block A</td>
+					<td>8:30-9:20</td>
 				</tr>
 				<tr>
-					<td>Period 2</td>
-					<td>10:30-12:15</td>
+					<td>Block B</td>
+					<td>9:30-10:15</td>
+				</tr>
+				<tr>
+					<td>Block C</td>
+					<td>10:25-11:10</td>
+				</tr>
+				<tr>
+					<td>Block D</td>
+					<td>11:20-12:05</td>
 				</tr>
 				<tr>
 					<td>Lunch</td>
-					<td>12:15-1:00</td>
+					<td>12:05-12:50</td>
 				</tr>
 				<tr>
-					<td>Period 3</td>
-					<td>1:00-2:20</td>
+					<td>Block E</td>
+					<td>12:50-1:35</td>
 				</tr>
 				<tr>
-					<td>Period 4</td>
-					<td>2:30-3:50</td>
+					<td>Block F</td>
+					<td>1:45-2:30</td>
+				</tr>
+				<tr>
+					<td>Block G</td>
+					<td>2:40-3:45</td>
 				</tr>
 			</table>
 		</div>
-		<div id="loginPane">
+		<div id="mainPane">
 			<a id="logo" href="">Intranet</a>
 			<br />
 			<br />

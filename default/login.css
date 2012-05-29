@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#loginPane {
+#mainPane {
 	position:absolute;
 	left:0px;
 	top:0px;
@@ -82,7 +82,7 @@
 	        transition-duration:0.2s;
 }
 @media (max-width:645px) {
-	#loginPane {
+	#mainPane {
 		width:100%;
 		padding:0px 4px;
 	}

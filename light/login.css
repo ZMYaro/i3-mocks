@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#loginPane, #subPane {
+#mainPane, #subPane {
 	background-color:#F0F0F0;
 	background-color:rgba(240,240,240,0.8);
 	background:-webkit-linear-gradient(rgba(255,255,255,1), rgba(240,240,240,0.8) 256px);
@@ -21,7 +21,7 @@
 }
 
 @media (max-width:645px) {
-	#loginPane {
+	#mainPane {
 		background-color:#F0F0F0;
 		background-color:rgba(240,240,240,0.8);
 		background-image:-webkit-linear-gradient(rgba(255,255,255,0.8), rgba(240,240,240,0.8));
