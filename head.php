@@ -58,13 +58,13 @@
 					themeLink = document.createElement("link");
 					themeLink.rel = "stylesheet";
 					themeLink.type = "text/css";
-					themeLink.href = "public/css/" + theme + "/" + cssFiles[i] + ".css";
+					themeLink.href = "../public/css/" + theme + "/" + cssFiles[i] + ".css";
 					document.head.appendChild(themeLink);
 			}
 			themeLink = document.createElement("link");
 			themeLink.rel = "stylesheet";
 			themeLink.type = "text/css";
-			themeLink.href = "mock-" + theme + ".css";
+			themeLink.href = "../mock-" + theme + ".css";
 			document.head.appendChild(themeLink);
 			
 			localStorage.theme = theme;
