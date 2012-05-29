@@ -11,8 +11,8 @@
 			<div class="paneHeader">Polls</div>
 			<div class="paneContent">
 				<ul class="menu">
-					<li><a href="#" onclick="clickedTab(this.parentElement);openSubPane('polls/tjtoday.ejs');">tjTODAY Poll</a></li>
-					<li><a href="#" onclick="clickedTab(this.parentElement);openSubPane('polls/yearbook.ejs');">Yearbook Poll</a></li>
+					<li><a href="#" onclick="clickedTab(this.parentElement);openSubPane('tjtoday.ejs');">tjTODAY Poll</a></li>
+					<li><a href="#" onclick="clickedTab(this.parentElement);openSubPane('yearbook.ejs');">Yearbook Poll</a></li>
 				</ul>
 			</div>
 		</div>

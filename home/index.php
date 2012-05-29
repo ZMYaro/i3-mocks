@@ -8,7 +8,7 @@
 			include "../intraboxes.php";
 		?>
 		<div class="pane" id="mainPane">
-			<div class="paneHeader">Welcome, User 7</div>
+			<div class="paneHeader">Welcome, Zachary</div>
 			<div class="paneContent">
 				<br />
 				<header style="font-size:110%;font-weight:bold;">What is happening</header>
