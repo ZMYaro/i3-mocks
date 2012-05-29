@@ -3,9 +3,9 @@
 	<head>
 		<title>Preferences - TJ Intranet</title>
 		<?php
-			include "head.php";
-			include "header.php";
-			include "intraboxes.php";
+			include "../head.php";
+			include "../header.php";
+			include "../intraboxes.php";
 		?>
 		<div class="pane" id="mainPane">
 			<div class="paneHeader">Preferences</div>
