@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="../fire.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/default/ui.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/default/menus.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/default/toolbars.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/default/header.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/default/intraboxes.css" />
 	<link rel="stylesheet" type="text/css" href="../public/css/default/panes.css" />
@@ -44,7 +45,7 @@
 		 */
 		function switchTheme(theme) {
 			//alert(theme); // for debugging
-			var cssFiles = ["ui", "menus", "header", "panes", "intraboxes", "home", "news", "calendar", "eighth"];
+			var cssFiles = ["ui", "menus", "toolbars", "header", "panes", "intraboxes", "home", "news", "calendar", "eighth"];
 			for(var i = 0; i < cssFiles.length + 1; i++) {
 					try {
 						document.head.removeChild(document.head.getElementsByTagName("link")[document.head.getElementsByTagName("link").length - 1]);
