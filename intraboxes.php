@@ -41,7 +41,7 @@
 	<div class="intrabox">
 		<div class="intraboxHeader">Scratchpad<div style="float:right;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;">▴&nbsp;&nbsp;▾&nbsp;&nbsp;<span onclick="parentElement.parentElement.parentElement.classList.toggle('collapsed');">−</span>&nbsp;<span onclick="parentElement.parentElement.parentElement.parentElement.removeChild(parentElement.parentElement.parentElement);">&times;</span></div></div>
 		<div class="intraboxContent">
-			<textarea style="width:95%;height:7.2em">Nothing you type here will actually be saved.</textarea>
+			<textarea style="width:95%;height:7.2em">Type your notes here.</textarea>
 		</div>
 	</div>
 	<div class="intrabox">
