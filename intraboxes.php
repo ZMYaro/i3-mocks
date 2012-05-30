@@ -11,7 +11,7 @@
 						if(localStorage.clockFormat === "24hour") {
 							document.getElementById("clock").innerHTML = (date.getHours() < 10 ? "0" : "") + date.getHours() + ":" + (date.getMinutes() < 10 ? "0" : "") + date.getMinutes() + ":" + (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
 						} else {
-							document.getElementById("clock").innerHTML = (date.getHours() % 12 != 0 ? date.getHours() % 12 : "12") + ":" + (date.getMinutes() < 10 ? "0" : "") + date.getMinutes() + ":" + (date.getSeconds() < 10 ? "0" : "") + date.getSeconds() + "<small> " + (date.getHours() > 12 ? "PM" : "AM") + "</small>";
+							document.getElementById("clock").innerHTML = (date.getHours() % 12 != 0 ? date.getHours() % 12 : "12") + ":" + (date.getMinutes() < 10 ? "0" : "") + date.getMinutes() + ":" + (date.getSeconds() < 10 ? "0" : "") + date.getSeconds() + "<span style=\"font-size:50%;vertical-align:middle;\"> " + (date.getHours() >= 12 ? "PM" : "AM") + "</span>";
 						}
 					}, 200);
 				}, false);
