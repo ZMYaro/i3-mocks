@@ -11,7 +11,7 @@
 			<div class="paneHeader">News</div>
 			<div class="paneContent">
 				<div class="newsPost">
-					<header>Free food!</header>
+					<header>tjSTAR Today</header>
 					<article>
 						<p>Bacon ipsum dolor sit amet non cupidatat laboris chicken. Flank quis magna spare ribs. Ball tip pastrami magna pork belly. Spare ribs tempor shank beef, pig pork chop filet mignon. Chuck aliquip elit aliqua reprehenderit salami culpa, ut eiusmod filet mignon dolore. Short loin leberkäse tempor excepteur venison esse. Laboris sint hamburger short loin tail.</p>
 						<p>Brisket in in id, dolore spare ribs reprehenderit filet mignon pork belly qui shank cillum ad enim. Id short loin do nulla sunt ea, boudin beef ribs. Qui ham sausage reprehenderit, biltong consectetur ullamco in aliqua tongue andouille beef jowl t-bone. Incididunt hamburger dolore rump laborum veniam. Adipisicing bacon leberkäse laborum quis. Laborum id pancetta, duis pig occaecat frankfurter rump fatback. Sed cupidatat ea minim rump occaecat, in shoulder nisi jerky meatloaf sirloin adipisicing.</p>
@@ -26,7 +26,7 @@
 					</footer>
 				</div>
 				<div class="newsPost">
-					<header>Look at my news posting, my news posting is amazing</header>
+					<header>Power outage!  Sparky the squirrel strikes again!</header>
 					<aside>Posted on 2011-12-16 by ASDF club</aside>
 					<article>
 						<p>Fatback aliqua et, aute jowl irure laboris. Hamburger quis filet mignon ham, sed turducken mollit ham hock in prosciutto exercitation voluptate tail. Eu laborum ullamco, ad duis do pork loin cupidatat sausage laboris. Biltong short loin prosciutto incididunt, kielbasa pancetta fugiat capicola reprehenderit fatback proident anim cupidatat. Culpa frankfurter pariatur jerky pastrami consectetur est non occaecat. Laborum cupidatat t-bone, nulla duis strip steak jerky beef ribs sausage shank dolor culpa enim. Sirloin exercitation dolore drumstick aliquip.</p>
@@ -42,7 +42,7 @@
 					</footer>
 				</div>
 				<div class="newsPost">
-					<header>This news posting is not amazing, and does not taste like rasins</header>
+					<header>J-Day this Friday!</header>
 					<article>
 						<p>Tenderloin filet mignon short ribs, ullamco est quis laborum nisi. Tail capicola excepteur magna, swine meatloaf reprehenderit turducken dolore et laborum duis dolor venison. Fugiat dolor pancetta, tri-tip turkey rump hamburger proident ut tongue capicola. Aute ut quis consectetur. Chuck aute venison, dolore magna tempor bresaola. Sint t-bone corned beef elit, swine sed sirloin tail ullamco velit beef ribs prosciutto laborum fugiat et. In rump short ribs, pig pariatur sunt salami strip steak nulla occaecat bresaola sint.</p>
 					</article>

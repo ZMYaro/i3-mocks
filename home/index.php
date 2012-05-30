@@ -37,7 +37,7 @@
 						<td>
 							<a href="#">Red Day</a>
 							<br />
-							12am - <a href="#">Wednesdays are useless</a>
+							8am - <a href="#">tjSTAR day!</a>
 						</td>
 						<td>
 							<a href="#">Light Blue Day</a>
@@ -45,7 +45,7 @@
 						<td>
 							<a href="#">Red Day</a>
 							<br />
-							12am - <a href="#">It's Friday, not to be confused with Fryeedayee</a>
+							12pm - <a href="#">J-Day</a>
 							<br />
 							4pm - <a href="#">No school until Monday!</a>
 						</td>
@@ -65,12 +65,12 @@
 					You are currently signed up for:
 					<table>
 						<tr>
-							<td><a href="#">ASDF club</a></td>
+							<td><a href="#">Robotics</a></td>
 							<td>Room 116</td>
 							<td>A block</td>
 						</tr>
 						<tr>
-							<td><a href="#">AOEU club</a></td>
+							<td><a href="#">Systems Administrators</a></td>
 							<td>Room 115</td>
 							<td>B block</td>
 						</tr>
@@ -80,9 +80,9 @@
 				<div class="homeBox" id="newsBox">
 					<header>Latest news</header>
 					<ul>
-						<li><a href="#">Free food!</a></li>
-						<li><a href="#">Look at my news post, my news post is amazing.</a></li>
-						<li><a href="#">This news posting is not amazing, and does not taste like rasins</a></li>
+						<li><a href="#">tjSTAR today!</a></li>
+						<li><a href="#">Power outage!  Sparky the squirrel strikes again!</a></li>
+						<li><a href="#">J-Day this Friday!</a></li>
 						<li><a href="#">Moar newspost!</a></li>
 					</ul>
 					<a href="news.php">All news &rarr;</a>
@@ -91,34 +91,6 @@
 					<header>Birthdays</header>
 					<br />
 					<strong>Today:</strong>
-					<table>
-						<tr>
-							<th></th>
-							<th>Name</th>
-							<th>Age</th>
-						</tr>
-						<tr>
-							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
-							<td><a href="#">John Doe</a></td>
-							<td>15</td>
-						</tr>
-						<tr>
-							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
-							<td><a href="#">Firstname Last</a></td>
-							<td>16</td>
-						</tr>
-						<tr>
-							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
-							<td><a href="#">Firstname Last</a></td>
-							<td>17</td>
-						</tr>
-						<tr>
-							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
-							<td><a href="#">Firstname Last</a></td>
-							<td>18</td>
-						</tr>
-					</table>
-					<strong>Tomorrow:</strong>
 					<table>
 						<tr>
 							<th></th>
@@ -143,6 +115,34 @@
 						<tr>
 							<td><img src="https://lh4.googleusercontent.com/-5PPQvxMaVnI/AAAAAAAAAAI/AAAAAAAAAAA/h1RA9_ad1zo/s200-c-k/photo.jpg" style="width:16px;height:16px;" /></td>
 							<td><a href="#">Andrew Hamilton</a></td>
+							<td>18</td>
+						</tr>
+					</table>
+					<strong>Tomorrow:</strong>
+					<table>
+						<tr>
+							<th></th>
+							<th>Name</th>
+							<th>Age</th>
+						</tr>
+						<tr>
+							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
+							<td><a href="#">John Doe</a></td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
+							<td><a href="#">Cave Johnson</a></td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
+							<td><a href="#">Firstname Last</a></td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td><img src="https://wave.google.com/wave/static/images/unknown.jpg" style="width:16px;height:16px;" /></td>
+							<td><a href="#">Firstname Last</a></td>
 							<td>18</td>
 						</tr>
 					</table>
