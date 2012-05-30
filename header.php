@@ -1,5 +1,5 @@
 <div id="header">
-	<a id="logo" href="home">Intranet</a>
+	<a id="logo" href="../home">Intranet</a>
 	<div id="sections">
 		<a href="../news" class="section"><img src="../public/images/themes/default/modules/news/icon.png" alt="" /> News</a>
 		<a href="../polls" class="section"><img src="../public/images/themes/default/modules/polls/icon.png" alt="" /> Polls</a>
